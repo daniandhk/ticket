@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "ca238ff8-36a5-44c2-9704-12fecc0934b2",
+		"name": "Soal Teknis dari detikcom - Dani Andhika Permana",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11428569"
+	},
+	"item": [
+		{
+			"name": "check-ticket",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/check-ticket.php?event_id=1&ticket_code=ABC01AHB89",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"check-ticket.php"
+					],
+					"query": [
+						{
+							"key": "event_id",
+							"value": "1",
+							"description": "Dummy migration: event_id = 1"
+						},
+						{
+							"key": "ticket_code",
+							"value": "ABC01AHB89",
+							"description": "Dummy migration: ticket_code= ABC01AHB89"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "claim-ticket",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/claim-ticket.php?event_id=1&ticket_code=ABC01AHB89",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"claim-ticket.php"
+					],
+					"query": [
+						{
+							"key": "event_id",
+							"value": "1",
+							"description": "Dummy migration: event_id = 1"
+						},
+						{
+							"key": "ticket_code",
+							"value": "ABC01AHB89",
+							"description": "Dummy migration: ticket_code= ABC01AHB89"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
