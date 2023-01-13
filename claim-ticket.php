@@ -2,6 +2,15 @@
 // koneksi ke database dari database.php
 require_once 'database.php';
 
+// cek jika params kosong, return error
+if (empty($_GET['event_id']) || empty($_GET['ticket_code'])) {
+    echo json_encode([
+        'status' => 'error',
+        'message' => 'params tidak boleh kosong'
+    ]);
+    exit;
+}
+
 // get event id dan ticket code dari params
 $event_id = $_GET['event_id'];
 $ticket_code = $_GET['ticket_code'];
